@@ -1,0 +1,14 @@
+- pipeline.id: principal
+  path.config: "/usr/share/logstash/pipeline/primeiro.conf"
+  pipeline.workers: 1
+  pipeline.batch.size: 1
+
+#- pipeline.id: secundario
+#  path.config: "/usr/share/logstash/pipeline/segundo.conf"
+#  pipeline.workers: 1
+#  pipeline.batch.size: 1
+
+#- pipeline.id: terciario
+#  path.config: "/usr/share/logstash/pipeline/terceiro.conf"
+#  pipeline.workers: 1
+#  pipeline.batch.size: 1
