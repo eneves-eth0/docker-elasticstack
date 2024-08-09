@@ -1,21 +1,21 @@
 version: "3.8"
 services:
-  logstash:
-    image: "docker.elastic.co/logstash/logstash:${STACK_VERSION}"
-    depends_on:
-      es01:
-        condition: service_healthy
-      es02:
-        condition: service_healthy
-      es03:
-        condition: service_healthy
-    links:
-      - es01
-      - es02
-      - es03
-    volumes:
-      - ./logstash/pipeline:/usr/share/logstash/pipeline/
-      - ./logstash/config:/usr/share/logstash/config/
+#  logstash:
+#    image: "docker.elastic.co/logstash/logstash:${STACK_VERSION}"
+#    depends_on:
+#      es01:
+#        condition: service_healthy
+#      es02:
+#        condition: service_healthy
+#      es03:
+#        condition: service_healthy
+#    links:
+#      - es01
+#      - es02
+#      - es03
+#    volumes:
+#      - ./logstash/pipeline:/usr/share/logstash/pipeline/
+#      - ./logstash/config:/usr/share/logstash/config/
   setup:
     image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     volumes:
